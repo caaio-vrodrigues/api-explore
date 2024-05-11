@@ -13,7 +13,7 @@ export const Menu = () => {
     <header>
       <menu className={`menuHome flex flex-col items-center h-[100vh]`}>
         <h1 className={`text-blue-400 font-bold text-[30px] pt-4`}>APIExplore</h1>
-        <SocialList/>
+        <SocialList footer={false}/>
         <MenuMessage/>
         <Image src={apiImg} alt="Ilustração sobre API" className={``}/>
         <Techs/>

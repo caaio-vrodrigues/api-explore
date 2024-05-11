@@ -3,6 +3,7 @@
 //components
 import { Menu } from "@/components/menu/Menu";
 import { Main } from "@/components/main/Main";
+import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Menu/>
       <div className={`wrapMainFooter flex flex-col`}>
         <Main/>
-        <footer className={`mt-auto`}><h1>Footer here!</h1></footer>
+        <Footer/>
       </div>
     </>
   );

@@ -10,31 +10,38 @@ import typescriptImg from './typescript.png';
 type TgetTechsImgs = {
   id: number,
   img: StaticImport,
+  alt: string,
 }[];
 
 export const getTechsImgs: TgetTechsImgs = [
   {
     id: 1,
     img: cssImg,
+    alt: 'CSS logo',
   },
   {
     id: 2,
     img: htmlImg,
+    alt: 'HTML logo'
   },
   {
     id: 3,
     img: javascriptImg,
+    alt: 'Javascript logo'
   },
   {
     id: 4,
     img: nextJsImg,
+    alt: 'Next-Js logo'
   },
   {
     id: 5,
     img: reactJsImg,
+    alt: 'React-Js logo'
   },
   {
     id: 6,
     img: typescriptImg,
+    alt: 'Typescript logo'
   },
 ];
