@@ -1,4 +1,4 @@
-import { socialIcons } from "@/utils/social-icons";
+import { socialIcons } from "@/utils/socialIcons";
 import { SocialIcon } from "./SocialIcon";
 
 type TSocialList = {
