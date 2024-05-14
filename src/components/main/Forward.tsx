@@ -7,11 +7,9 @@ import { apiInfos } from "@/utils/apiInfos";
 import ContextProvider from "../../../context/ContextMaster";
 
 export const Forward = () => {
-  const { lastIdCard, setLastIdCard } = useContext(ContextProvider);
+  const { lastIdCard } = useContext(ContextProvider);
 
   if(apiInfos.length === lastIdCard){
-    setLastIdCard(0);
-
     return(
       <>
         {apiInfos.map(card => {

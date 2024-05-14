@@ -22,11 +22,15 @@ export const ApiCards = () => {
   const onClickForward = () => {
     if(lastIdCard === 0){
       setLastIdCard(base);
-    }
+    };
 
     if(lastIdCard !== 0){
       setLastIdCard(lastIdCard + base);
-    }
+    };
+
+    if(apiInfos.length === lastIdCard + 4){
+      setLastIdCard(0);
+    };
 
     setClickForward(true);
   };
