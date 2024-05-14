@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
+//context
+import { ContextMaster } from "../../context/ContextMaster";
+
 //styles
 import "./globals.css";
 import '../../sass/index.scss';
@@ -22,7 +25,9 @@ export default function RootLayout({
       <body 
         suppressHydrationWarning={true} 
         className={`${inter.className} layoutBody flex`}>
-        {children}
+        <ContextMaster>
+          {children}
+        </ContextMaster>
       </body>
     </html>
   );
