@@ -9,7 +9,7 @@ export const Footer = () => {
           <SocialList footer={true}/>
         </div>
       </div>
-      <h1 className={`font-bold text-[20px]`}>Developed by Caio V. Rodrigues</h1>
+      <h1 className={`semi-bold text-[20px]`}>Developed by Caio V. Rodrigues</h1>
       <h2 className={`semi-bold`}>Front-End Developer</h2>
     </footer>
   );

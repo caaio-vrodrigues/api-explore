@@ -1,4 +1,4 @@
-import { ApiCards } from "./ApiCards";
+import { ApiCards } from "./api-cards/ApiCards";
 
 export const Main = () => {
   return(

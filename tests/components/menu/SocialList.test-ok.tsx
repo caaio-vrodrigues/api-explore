@@ -31,11 +31,3 @@ describe('renderization footer', () => {
     screen.getAllByRole('link');
   });
 });
-
-describe('behavior', () => {
-  it('', () => {
-    
-  });
-
-  expect('');
-});

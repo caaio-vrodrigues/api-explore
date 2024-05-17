@@ -15,7 +15,7 @@ export const Menu = () => {
         <h1 className={`text-blue-400 font-bold text-[30px] pt-4`}>APIExplore</h1>
         <SocialList footer={false}/>
         <MenuMessage/>
-        <Image src={apiImg} alt="Ilustração sobre API" className={``}/>
+        <Image src={apiImg} data-testid={'mainMenuImg'} alt="Ilustração sobre API" className={``}/>
         <Techs/>
       </menu>
     </header>

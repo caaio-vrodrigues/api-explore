@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 //context
-import { ContextMaster } from "../../context/ContextMaster";
+import { ContextMaster } from "../context/ContextMaster";
 
 //styles
 import "./globals.css";
