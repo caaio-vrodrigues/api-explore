@@ -1,51 +1,63 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export const apiInfos = [
+//imgs
+import climaTempo from '@/components/main/imgs/clima-tempo.jpg';
+import apiImg from '@/components/menu/imgs/img-api.jpg';
+
+type TapiInfos = {
+  id: number,
+  apiName: string,
+  descr: string,
+  img: StaticImport,
+}[];
+
+export const apiInfos: TapiInfos = [
   {
     id: 1,
-    api: 'Name API 1',
+    apiName: 'Clima Tempo',
     descr: '',
-    img: '',
+    img: climaTempo,
   },
   {
     id: 2,
-    api: 'Name API 2',
+    apiName: 'Name API 2',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 3,
-    api: 'Name API 3',
+    apiName: 'Name API 3',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 4,
-    api: 'Name API 4',
+    apiName: 'Name API 4',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 5,
-    api: 'Name API 5',
+    apiName: 'Name API 5',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 6,
-    api: 'Name API 6',
+    apiName: 'Name API 6',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 7,
-    api: 'Name API 7',
+    apiName: 'Name API 7',
     descr: '',
-    img: '',
+    img: apiImg,
   },
   {
     id: 8,
-    api: 'Name API 8',
+    apiName: 'Name API 8',
     descr: '',
-    img: '',
+    img: apiImg,
   },
 ];

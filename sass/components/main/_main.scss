@@ -5,4 +5,43 @@
 
 .wrapMainFooter{
   min-width: 80%;
-}
+};
+
+.coverBg{
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+};
+
+.coverBg h1{
+  color: rgb(255, 255, 255);
+  background-color: rgba(7, 56, 54, 0.658);
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+};
+
+.coverBg span{
+  background-color: rgb(68, 6, 6);
+  font-size: 25px;
+  height: 100%;
+  padding: 10px;
+};
+
+.coverBg span svg{
+  height: 38px;
+};
+
+.coverBg span svg:hover{
+  color: rgb(209, 191, 191);
+};
+
+.cardArrows svg{
+  color: rgb(255, 255, 255);
+};
+
+.cardArrows svg:hover{
+  color: rgb(197, 159, 159);
+};

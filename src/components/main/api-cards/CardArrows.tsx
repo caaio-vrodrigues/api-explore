@@ -22,16 +22,16 @@ export const CardArrows = ({
   const {lastIdCard, setLastIdCard} = useContext(ContextProvider);
 
   return(
-    <div className={`w-[90%] flex mt-8`}>
+    <div className={`cardArrows w-[90%] flex mt-8`}>
       <button className={`mr-auto`}>
         <IconArrowLeft 
-          className={`w-[35px] h-[35px] hover:text-blue-200`}
+          className={`w-[35px] h-[35px]`}
           onClick={() => onClickBack(lastIdCard, base, apiInfosLeng, 
             setLastIdCard, setClickForward)}/>
       </button>
       <button className={`ml-auto`}>
         <IconArrowRight 
-          className={`w-[35px] h-[35px] hover:text-blue-200`}
+          className={`w-[35px] h-[35px]`}
           onClick={() => onClickForward(lastIdCard, base, apiInfosLeng, 
             setLastIdCard, setClickForward)}/>
       </button>
