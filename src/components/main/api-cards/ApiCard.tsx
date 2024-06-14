@@ -14,7 +14,7 @@ type TCard = {
   };
 };
 
-export const Cards = ({ card }: TCard) => {
+export const ApiCard = ({ card }: TCard) => {
   return(
     <article key={card.id} className={`w-[40%] h-[200px] 
     flex items-center justify-center m-auto mt-8 relative`}>

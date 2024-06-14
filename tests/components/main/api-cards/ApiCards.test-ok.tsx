@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react';
 
 //components
-import { ApiCards } from '@/components/main/api-cards/ApiCards';
+import { ApiCards } from '@/components/main/api-cards/ApiMainComp';
 
 describe('Rendering the ApiCards component', () => {
   it('must render two buttons and four articles', () => {

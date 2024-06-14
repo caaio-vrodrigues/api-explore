@@ -1,21 +1,25 @@
 type TClickForward = (
-  lastIdCard: number, 
-  base: number, 
-  apiLeng: number, 
-  setLastIdCard: (base: number) => void, 
-  setClickForward: (show: boolean) => void,
+  cardInfos: {
+    lastCardId: number,
+    base: number, 
+    apiCardsLeng: number,
+    setLastCardId: (base: number) => void,
+    setClickArrow: (show: boolean) => void,
+  },
 ) => void
 
-export const onClickForward: TClickForward = (
-  lastIdCard, base, apiLeng, setLastIdCard, setClickForward) => {
-  if(lastIdCard === 0){
-    setLastIdCard(base);
+export const onClickForward: TClickForward = ({
+  lastCardId, base, apiCardsLeng, setLastCardId, setClickArrow}) => {
+
+  if(lastCardId === 0){
+    setLastCardId(base);
   };
-  if(lastIdCard !== 0){
-    setLastIdCard(lastIdCard + base);
+  if(lastCardId !== 0){
+    setLastCardId(lastCardId + base);
   };
-  if(apiLeng === lastIdCard + 4){
-    setLastIdCard(0);
+  if(apiCardsLeng === lastCardId + 4){
+    setLastCardId(0);
   };
-  setClickForward(true);
+  
+  setClickArrow(true);
 };

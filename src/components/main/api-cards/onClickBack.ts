@@ -1,18 +1,22 @@
 type TClickBack = (
-  lastIdCard: number, 
-  base: number, 
-  apiLeng: number, 
-  setLastIdCard: (base: number) => void, 
-  setClickForward: (show: boolean) => void,
+  cardInfos: {
+    lastCardId: number,
+    base: number, 
+    apiCardsLeng: number,
+    setLastCardId: (base: number) => void,
+    setClickArrow: (show: boolean) => void,
+  },
 ) => void
 
-export const onClickBack: TClickBack = (
-  lastIdCard, base, apiLeng, setLastIdCard, setClickForward ) => {
-  if(lastIdCard === 0){
-    setLastIdCard(apiLeng - base);
+export const onClickBack: TClickBack = ({
+  lastCardId, base, apiCardsLeng, setLastCardId, setClickArrow}) => {
+
+  if(lastCardId === 0){
+    setLastCardId(apiCardsLeng - base);
   };
-  if(lastIdCard !== 0){
-    setLastIdCard(lastIdCard - base);
+  if(lastCardId !== 0){
+    setLastCardId(lastCardId - base);
   };
-  setClickForward(true);
+  
+  setClickArrow(true);
 };

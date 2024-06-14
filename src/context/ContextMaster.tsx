@@ -3,8 +3,8 @@
 import React, { createContext, useState } from "react";
 
 type TContextProvider = {
-  lastIdCard: number,
-  setLastIdCard: (val: number) => void,
+  lastCardId: number,
+  setLastCardId: (val: number) => void,
 };
 
 type TContextMaster = {
@@ -12,18 +12,18 @@ type TContextMaster = {
 };
 
 const ContextProvider = createContext<TContextProvider>({
-  lastIdCard: 0,
-  setLastIdCard: () => {},
+  lastCardId: 0,
+  setLastCardId: () => {},
 });
 
 export default ContextProvider;
 
 export const ContextMaster = ({ children }: TContextMaster): React.ReactNode => {
-  const [lastIdCard, setLastIdCard] = useState<number>(0);
+  const [lastCardId, setLastCardId] = useState<number>(0);
 
   return(
     <ContextProvider.Provider value={{
-      lastIdCard, setLastIdCard,
+      lastCardId, setLastCardId,
     }}>
       {children}
     </ContextProvider.Provider>
