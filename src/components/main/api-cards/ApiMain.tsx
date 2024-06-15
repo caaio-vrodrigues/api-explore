@@ -27,7 +27,7 @@ export const ApiMain = () => {
   };
 
   return(
-    <section className={`flex justify-center items-center w-[100%] p-auto`}>
+    <section className='apiMainSec'>
       <ApiArrow Icon={IconArrowLeft} arrowDirection='back' cardInfos={cardInfos}/>
       <ApiCardsContainer 
         apiInfos={apiInfos} 

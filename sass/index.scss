@@ -1,10 +1,10 @@
-//font
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-//layout
-@import './app/layout';
-
 //components
+  //layout
+  @import './app/layout';
+  
   //menu
   @import './components/menu/menu';
   @import './components/menu/socialList';
@@ -16,6 +16,7 @@
   @import './components/main/apiCardsContainer';
   @import './components/main/apiCard';
   @import './components/main/apiArrow';
+  @import './components/main/apiMain';
   
   //footer
   @import './components/footer/footer';

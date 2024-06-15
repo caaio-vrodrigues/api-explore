@@ -18,12 +18,10 @@ export const ApiCard = ({ card }: TCard) => {
   return(
     <article 
       key={card.id} 
-      className='apiCard'
-    >
+      className='apiCard'>
       <Background background={bgImgTest}/>
       <button
-        onClick={()=>{}}
-        className='coverBg'>
+        onClick={()=>{}}>
         <h1>{card.apiName}</h1>
         <span><IconSquareArrowRight/></span>
       </button>

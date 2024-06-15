@@ -7,4 +7,35 @@
   margin: 20px;
   width: 40%;
   height: 200px;
+
+  button{
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+
+    h1{
+      color: rgb(255, 255, 255);
+      background-color: rgba(7, 56, 54, 0.658);
+      font-weight: bold;
+      font-size: 25px;
+      padding: 10px;
+    };
+    
+    span{
+      background-color: rgb(68, 6, 6);
+      font-size: 25px;
+      height: 100%;
+      padding: 10px;
+
+      svg{
+        height: 38px;
+      };
+
+      svg:hover{
+        color: rgb(209, 191, 191);
+      };
+    };
+  };
 };

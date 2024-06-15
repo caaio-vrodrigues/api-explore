@@ -5,7 +5,7 @@ type TClickBack = (
     apiCardsLeng: number,
     setLastCardId: (base: number) => void,
     setClickArrow: (show: boolean) => void,
-  },
+  }
 ) => void
 
 export const onClickBack: TClickBack = ({
