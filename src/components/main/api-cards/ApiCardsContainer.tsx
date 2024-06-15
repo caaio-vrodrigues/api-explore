@@ -18,17 +18,27 @@ type TApiCardsCont = {
   }[],
 };
 
-export const ApiCardsContainer = ({ clickArrow, apiInfos, base }: TApiCardsCont) => {
+export const ApiCardsContainer = ({ 
+  clickArrow, apiInfos, base }: TApiCardsCont) => {
+    
   const { lastCardId } = useContext(ContextProvider);
 
   return(
     <div className='cardsContainer'>
       {apiInfos.map(card => {
         if(!clickArrow && card.id <= base){
-          return <ApiCard key={card.id} card={card}/>
+          return (
+            <ApiCard 
+              key={card.id} 
+              card={card}/>
+          );
         };
         if(card.id > lastCardId && card.id <= lastCardId + base){
-          return <ApiCard key={card.id} card={card}/>
+          return (
+            <ApiCard 
+              key={card.id} 
+              card={card}/>
+          );
         };
       })}
     </div>

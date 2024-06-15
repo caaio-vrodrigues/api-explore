@@ -28,12 +28,18 @@ export const ApiMain = () => {
 
   return(
     <section className='apiMainSec'>
-      <ApiArrow Icon={IconArrowLeft} arrowDirection='back' cardInfos={cardInfos}/>
+      <ApiArrow 
+        Icon={IconArrowLeft} 
+        arrowDirection='back' 
+        cardInfos={cardInfos}/>
       <ApiCardsContainer 
         apiInfos={apiInfos} 
         clickArrow={clickArrow}
         base={base}/>
-      <ApiArrow Icon={IconArrowRight} arrowDirection='forward' cardInfos={cardInfos}/>
+      <ApiArrow 
+        Icon={IconArrowRight} 
+        arrowDirection='forward' 
+        cardInfos={cardInfos}/>
     </section>
   );
 };

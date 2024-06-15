@@ -5,8 +5,7 @@ type TSocialIcon = {
   link: string,
 };
 
-export const SocialIcon = ({ Icon, link }: TSocialIcon) => {
-  return(
-    <a href={link} target='blank'><Icon/></a>
-  );
-};
+export const SocialIcon = ({ Icon, link }: TSocialIcon) => 
+  <a href={link} target='blank'>
+    <Icon/>
+  </a>

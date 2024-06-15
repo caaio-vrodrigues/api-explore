@@ -14,17 +14,14 @@ type TCard = {
   };
 };
 
-export const ApiCard = ({ card }: TCard) => {
-  return(
-    <article 
-      key={card.id} 
-      className='apiCard'>
+export const ApiCard = ({ card }: TCard) => 
+  <article 
+    key={card.id} 
+    className='apiCard'>
       <Background background={bgImgTest}/>
       <button
         onClick={()=>{}}>
         <h1>{card.apiName}</h1>
         <span><IconSquareArrowRight/></span>
       </button>
-    </article>
-  );
-};
+  </article>

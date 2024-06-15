@@ -19,9 +19,10 @@ export const SocialList = ({ footer }: TSocialList) => {
       {socialIcons.map(icon => 
         <li 
           key={icon.id} 
-          data-testid={dataTest}
-        >
-          <SocialIcon Icon={icon.icon} link={icon.link}/>
+          data-testid={dataTest}>
+            <SocialIcon 
+              Icon={icon.icon} 
+              link={icon.link}/>
         </li>)}
     </ul>
   );

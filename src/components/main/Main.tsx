@@ -1,9 +1,6 @@
 import { ApiMain } from './api-cards/ApiMain';
 
-export const Main = () => {
-  return(
-    <main className='mainContent'>
-      <ApiMain/>
-    </main>
-  );
-};
+export const Main = () => 
+  <main className='mainContent'>
+    <ApiMain/>
+  </main>

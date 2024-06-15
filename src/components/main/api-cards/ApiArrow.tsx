@@ -1,8 +1,8 @@
-import { ElementType } from "react";
+import { ElementType } from 'react';
 
 //funcs
-import { onClickBack } from "./onClickBack";
-import { onClickForward } from "./onClickForward";
+import { onClickBack } from './onClickBack';
+import { onClickForward } from './onClickForward';
 
 type TApiArrow = {
   Icon: ElementType,
