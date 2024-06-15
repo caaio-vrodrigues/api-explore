@@ -1,0 +1,21 @@
+.techsContainer{
+  display: flex;
+  background-color: rgb(161, 161, 170);
+  border-radius: 5px;
+  min-height: 150px;
+  margin-top: 40%;
+
+  .techsImgsWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 200px;
+
+    .TechImg{
+      margin: 7px;
+      width: 40px;
+    };
+  };
+};

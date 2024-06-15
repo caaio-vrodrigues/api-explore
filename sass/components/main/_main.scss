@@ -1,6 +1,11 @@
 .mainContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 80%;
   height: 100%;
+  background-color: rgb(59, 130, 246);
 };
 
 .wrapMainFooter{
@@ -38,10 +43,3 @@
   color: rgb(209, 191, 191);
 };
 
-.cardArrows svg{
-  color: rgb(255, 255, 255);
-};
-
-.cardArrows svg:hover{
-  color: rgb(197, 159, 159);
-};

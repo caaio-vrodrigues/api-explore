@@ -1,0 +1,31 @@
+.socialList{
+  display: flex;
+  border-radius: 5px;
+  padding: 7px;
+  color: rgb(96, 165, 251);
+  margin-bottom: 35%;
+
+    li{
+      padding: 3px;
+      border-radius: 5px;
+    };
+
+    li:hover{
+      background-color: rgb(96, 165, 251);
+      color: white;
+    };
+};
+
+.socialListFoot{
+  display: flex;
+
+    li{
+      border-radius: 5px;
+      padding: 3px;
+    };
+
+    li:hover{
+      background-color: rgb(207, 203, 203);
+      color: rgb(59, 130, 246);
+    };
+};

@@ -7,6 +7,8 @@ type TBackground = {
 };
 
 export const Background = ({ background }: TBackground): ReactElement => 
-  <Image fill alt='Imagem de background referente ao tema da API'
+  <Image 
+    fill 
+    alt='Imagem de background referente ao tema da API'
     src={background}>
   </Image>

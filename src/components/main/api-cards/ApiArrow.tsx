@@ -17,10 +17,13 @@ type TApiArrow = {
 };
 
 export const ApiArrow = ({ Icon, arrowDirection, cardInfos }: TApiArrow) => {
+  const cssButtonProp = 
+    arrowDirection === 'back' ? 'arrowBack' : 'arrowForward';
+
   return(
-    <button className={`${arrowDirection === 'back' && `mr-auto`}`}>
+    <button className={cssButtonProp}>
       <Icon 
-        className={`w-[35px] h-[35px]`}
+        className='arrowIcon'
         onClick={() => arrowDirection === 'back' ? 
           onClickBack(cardInfos) : onClickForward(cardInfos)}
       />

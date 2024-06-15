@@ -7,8 +7,6 @@ type TSocialIcon = {
 
 export const SocialIcon = ({ Icon, link }: TSocialIcon) => {
   return(
-    <a href={link} target='blank' className={`cursor-pointer`}>
-      <Icon/>
-    </a>
+    <a href={link} target='blank'><Icon/></a>
   );
 };

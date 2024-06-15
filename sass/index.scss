@@ -7,7 +7,15 @@
 //components
   //menu
   @import './components/menu/menu';
+  @import './components/menu/socialList';
+  @import './components/menu/menuMessage';
+  @import './components/menu/techs';
+
   //main
   @import './components/main/main';
+  @import './components/main/apiCardsContainer';
+  @import './components/main/apiCard';
+  @import './components/main/apiArrow';
+  
   //footer
   @import './components/footer/footer';

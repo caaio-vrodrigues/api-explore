@@ -1,5 +1,5 @@
 //components
-import { Background } from "@/utils/Background";
+import { Background } from '@/components/main/api-cards/Background';
 
 //icons
 import { IconSquareArrowRight } from '@tabler/icons-react';
@@ -16,14 +16,16 @@ type TCard = {
 
 export const ApiCard = ({ card }: TCard) => {
   return(
-    <article key={card.id} className={`w-[40%] h-[200px] 
-    flex items-center justify-center m-auto mt-8 relative`}>
+    <article 
+      key={card.id} 
+      className='apiCard'
+    >
       <Background background={bgImgTest}/>
       <button
         onClick={()=>{}}
-        className={`coverBg`}>
+        className='coverBg'>
         <h1>{card.apiName}</h1>
-        <span><IconSquareArrowRight className={``}/></span>
+        <span><IconSquareArrowRight/></span>
       </button>
     </article>
   );
