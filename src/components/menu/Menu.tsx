@@ -6,7 +6,7 @@ import { MenuMessage } from './MenuMessage';
 import { Techs } from './Techs';
 
 //imgs 
-import apiImg from '@/components/menu/imgs/img-api.jpg';
+import apiImg from '@/components/menu/imgs/api-img.png';
 
 export const Menu = () => 
   <header>
@@ -18,7 +18,8 @@ export const Menu = () =>
       <Image 
         src={apiImg} 
         data-testid='mainMenuImg'
-        alt='Ilustração sobre API'/>
+        alt='Ilustração sobre API'
+        className='w-[190px] h-[190px]'/>
       <Techs/>
     </menu>
   </header>

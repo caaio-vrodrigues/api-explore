@@ -16,15 +16,15 @@
     border-radius: 2px;
 
     h1{
-      color: rgb(255, 255, 255);
-      background-color: rgba(7, 56, 54, 0.658);
+      color: white;
+      background-color: rgba(7, 56, 54, 0.452);
       font-weight: bold;
       font-size: 25px;
       padding: 10px;
     };
     
     span{
-      background-color: rgb(68, 6, 6);
+      background-color: rgb(116, 10, 17);
       font-size: 25px;
       height: 100%;
       padding: 10px;
@@ -32,10 +32,14 @@
       svg{
         height: 38px;
       };
+    };
 
-      svg:hover{
-        color: rgb(209, 191, 191);
-      };
+    span:hover{
+      background-color: rgb(156, 36, 44);
     };
   };
+};
+
+.noImg{
+  background-color: rgb(74, 74, 75);
 };

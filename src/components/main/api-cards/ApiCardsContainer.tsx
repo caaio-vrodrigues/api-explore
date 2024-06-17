@@ -14,7 +14,7 @@ type TApiCardsCont = {
     id: number,
     apiName: string,
     descr: string,
-    img: StaticImport,
+    img: StaticImport | null,
   }[],
 };
 
@@ -25,19 +25,19 @@ export const ApiCardsContainer = ({
 
   return(
     <div className='cardsContainer'>
-      {apiInfos.map(card => {
-        if(!clickArrow && card.id <= base){
+      {apiInfos.map(cardInfos => {
+        if(!clickArrow && cardInfos.id <= base){
           return (
             <ApiCard 
-              key={card.id} 
-              card={card}/>
+              key={cardInfos.id} 
+              card={cardInfos}/>
           );
         };
-        if(card.id > lastCardId && card.id <= lastCardId + base){
+        if(cardInfos.id > lastCardId && cardInfos.id <= lastCardId + base){
           return (
             <ApiCard 
-              key={card.id} 
-              card={card}/>
+              key={cardInfos.id} 
+              card={cardInfos}/>
           );
         };
       })}

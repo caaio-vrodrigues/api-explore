@@ -1,4 +1,10 @@
+//data
 import { socialIcons } from '@/utils/socialIcons';
+
+//funcs
+import { getCssProps } from './getCssProps';
+
+//components
 import { SocialIcon } from './SocialIcon';
 
 type TSocialList = {
@@ -6,13 +12,7 @@ type TSocialList = {
 };
 
 export const SocialList = ({ footer }: TSocialList) => {
-  let cssPropUl = 'socialList';
-  let dataTest = 'socialListItem-Menu';
-
-  if(footer){
-    cssPropUl = 'socialListFoot';
-    dataTest = '';
-  };
+  const { cssPropUl, dataTest } = getCssProps(footer);
 
   return(
     <ul className={cssPropUl}>

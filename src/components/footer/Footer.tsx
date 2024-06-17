@@ -2,9 +2,9 @@ import { SocialList } from "../menu/SocialList";
 
 export const Footer = () => {
   return(
-    <footer className={`flex flex-col items-center footerHome bg-blue-500 mt-auto pb-8 p-4`}>
+    <footer className={`flex flex-col items-center footerHome mt-auto pb-8 p-4`}>
       <div className={`flex w-[100%]`}>
-        <h2 className={`text-white mr-auto`}>APIExplore by Caio V. Rodrigues</h2>
+        <h2 className={`mr-auto`}>APIExplore by Caio V. Rodrigues</h2>
         <div className={`ml-auto`}>
           <SocialList footer={true}/>
         </div>
