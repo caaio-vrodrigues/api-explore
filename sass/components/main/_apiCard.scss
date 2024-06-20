@@ -14,30 +14,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    color: white;
+    background-color: rgba(7, 56, 54, 0.452);
+    padding: 4px;
+    border-radius: 5px;
 
     h1{
-      color: white;
-      background-color: rgba(7, 56, 54, 0.452);
       font-weight: bold;
-      font-size: 25px;
-      padding: 10px;
-    };
-    
-    span{
-      background-color: rgb(116, 10, 17);
-      font-size: 25px;
-      height: 100%;
-      padding: 10px;
-
-      svg{
-        height: 38px;
-      };
+      font-size: 18px;
     };
 
-    span:hover{
-      background-color: rgb(156, 36, 44);
+    svg{
+      margin-left: 10px;
     };
+  };
+
+  button:hover{
+    background-color: rgba(3, 27, 26, 0.603);
+    color: rgb(255, 97, 97);
   };
 };
 

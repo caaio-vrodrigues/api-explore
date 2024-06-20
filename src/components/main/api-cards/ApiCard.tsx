@@ -23,9 +23,9 @@ export const ApiCard = ({ card }: TCard) => {
       className={cssProp}>
         {card.img && <Background background={card.img}/>}
         <button
-          onClick={()=>{}}>
+          onClick={()=>alert('Hello World!')}>
           <h1>{card.apiName}</h1>
-          <span><IconSquareArrowRight/></span>
+          <IconSquareArrowRight/>
         </button>
     </article>
   );
