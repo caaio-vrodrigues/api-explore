@@ -1,9 +1,10 @@
 .techsContainer{
   display: flex;
-  background-color: rgb(170, 24, 34);
+  background-color: rgb(74, 74, 75);
   border-radius: 5px;
   min-height: 150px;
   margin-top: 40%;
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.616);
 
   .techsImgsWrap{
     display: flex;

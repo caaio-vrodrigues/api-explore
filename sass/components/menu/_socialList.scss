@@ -11,9 +11,16 @@
       border-radius: 5px;
     };
 
-    li:hover{
-      background-color: rgb(233, 207, 207);
-      color: rgb(209, 38, 49);
+    svg{
+      text-shadow: 13px 12px 12px black;
+      padding: 2px;
+    };
+
+    svg:hover{
+      transition: 0.4s;
+      background-color: white;
+      color: black;
+      border-radius: 3px;
     };
 };
 
@@ -25,8 +32,16 @@
       padding: 3px;
     };
 
-    li:hover{
-      background-color: rgb(175, 156, 156);
-      color: rgb(209, 38, 49);
+    svg{
+      box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.61);
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+    };
+
+    svg:hover{
+      transition: 0.2s;
+      box-shadow: 2px 1px 3px 1px black;
+      background-color: rgb(88, 6, 6);
     };
 };

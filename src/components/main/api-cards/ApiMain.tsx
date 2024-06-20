@@ -8,8 +8,8 @@ import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import { useApiCardInfos } from './useApiCardInfos';
 
 //components
-import { ApiArrow } from './ApiArrow';
 import { ApiCardsContainer } from './ApiCardsContainer';
+import { ApiArrow } from './ApiArrow';
 
 export const ApiMain = () => {
   const { cardInfos, clickArrow } = useApiCardInfos(apiInfos.length);

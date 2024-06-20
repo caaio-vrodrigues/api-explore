@@ -21,11 +21,12 @@ export const ApiArrow = ({ Icon, arrowDirection, cardInfos }: TApiArrow) => {
     arrowDirection === 'back' ? 'arrowBack' : 'arrowForward';
 
   return(
-    <button className={cssButtonProp}>
+    <button 
+      className={cssButtonProp}
+      onClick={() => arrowDirection === 'back' ? 
+        onClickBack(cardInfos) : onClickForward(cardInfos)}>
       <Icon 
         className='arrowIcon'
-        onClick={() => arrowDirection === 'back' ? 
-          onClickBack(cardInfos) : onClickForward(cardInfos)}
       />
     </button>
   );

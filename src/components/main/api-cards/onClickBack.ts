@@ -9,7 +9,7 @@ type TClickBack = (
 ) => void
 
 export const onClickBack: TClickBack = ({
-  lastCardId, base, apiCardsLeng, setLastCardId, setClickArrow}) => {
+  lastCardId, base, apiCardsLeng, setLastCardId, setClickArrow }) => {
 
   if(lastCardId === 0){
     setLastCardId(apiCardsLeng - base);

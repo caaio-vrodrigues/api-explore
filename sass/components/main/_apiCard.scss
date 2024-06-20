@@ -5,8 +5,9 @@
   margin: auto;
   position: relative;
   margin: 20px;
-  width: 40%;
+  width: 450px;
   height: 200px;
+  box-shadow: 3px 2px 8px 1px black;
 
   button{
     opacity: 90%;
@@ -41,5 +42,5 @@
 };
 
 .noImg{
-  background-color: rgb(74, 74, 75);
+  background-color: rgb(32, 32, 32);
 };

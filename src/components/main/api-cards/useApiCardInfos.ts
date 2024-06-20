@@ -5,7 +5,7 @@ import ContextProvider from '@/context/ContextMaster';
 
 export const useApiCardInfos = (leng: number) => {
   const [clickArrow, setClickArrow] = useState<boolean>(false);
-  const { lastCardId, setLastCardId } = useContext(ContextProvider)
+  const { lastCardId, setLastCardId } = useContext(ContextProvider);
   let base = 4;
 
   return {
